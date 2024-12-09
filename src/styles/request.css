@@ -1,0 +1,125 @@
+/* Main container styling */
+.container {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Requests box */
+.requestsBox {
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+/* Requests list */
+.requestsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual request card styling */
+.requestCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  background-color: #444;
+}
+
+/* Logo container */
+.logoContainer {
+  width: 50px;
+}
+
+/* Logo image */
+.logoImage {
+  width: 100%;
+}
+
+/* Request information */
+.requestInfo {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+/* Icons container */
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Adjust container width */
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 20px; /* Slightly smaller font for title */
+  }
+
+  .requestCard {
+    padding: 8px; /* Reduce padding */
+  }
+
+  .requestInfo {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .logoContainer {
+    width: 40px; /* Adjust logo size */
+  }
+}
+
+/* Mobile screens (470px and below) */
+@media screen and (max-width: 470px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .requestCard {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .logoContainer {
+    width: 35px;
+  }
+
+  .requestInfo {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .icons {
+    justify-content: flex-start; /* Align icons to the start */
+    gap: 5px;
+  }
+}

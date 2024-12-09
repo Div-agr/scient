@@ -1,0 +1,52 @@
+.headgallery {
+  text-align: center;
+    font-size: 5vh;
+    padding-top: 11vh;
+}
+.group:hover .hidden {
+  display: block;
+}
+
+.group img {
+  transition: transform 0.5s ease;
+  object-fit: contain;
+}
+
+.group:hover img {
+  transform: scale(1.05);
+}
+.abc{
+  color: aliceblue;
+}
+
+
+
+/* Dots for slide selection should be spaced appropriately */
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* Media Queries */
+
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+ 
+  /* Reduce the size of the navigation arrows on smaller screens */
+  .gallery-arrow {
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
+}
+
+/* For screens smaller than 480px (mobile) */
+@media (max-width: 480px) {
+
+  /* Further reduce arrow size on mobile */
+  .gallery-arrow {
+    padding: 0.15rem;
+    font-size: 0.75rem;
+  }
+}

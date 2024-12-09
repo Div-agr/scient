@@ -1,0 +1,267 @@
+/* Footer.css */
+.footer-container {
+  position: relative;
+  display: flex;
+  background-color: #c8a200; 
+  padding: 1rem;
+  color: white;
+}
+
+.quick-links {
+  margin-top: 20vh;
+  flex: 1;
+}
+.follow-us {
+  display: flex;
+  align-items: center;
+  width: 51vw;
+  margin: 3vh 0 2vh 0;
+  justify-content: space-between;
+  color: black;
+}
+
+ .follow-us{
+  margin-left: 20px;
+ }
+.quick-links h3 {
+  font-size: 4.5vh;
+  font-weight: 700;
+  text-decoration: underline;
+}
+ .quick-links{
+  margin-left: 20px;
+ }
+.follow-us h3 {
+  font-size: 4.5vh;
+  font-weight: 700;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 2vh; 
+}
+
+.quick-links a {
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  font-size: 3vh;
+  font-weight: 600;
+}
+.footer-links-follow {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+}
+.footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 6vw;
+  align-items: center;
+  justify-content: center;
+}
+.logo-footer {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+.logo-footer img {
+  width: 210px;
+  height: 247px;
+  padding: 20px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin: 0 50px 0 20px;
+}
+.social-icons a {
+  color: black;
+  font-size: 6vh;
+  padding: 1vh;
+  margin: 0 1vh;
+}
+.custom-shape-divider-top-1725455521 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1725455521 svg {
+  position: relative;
+  display: block;
+  width: calc(155% + 1.3px);
+  height: 148px;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 835px){
+  .footer-logo {
+   
+    padding-left: 1vw;
+   
+}
+  .logo-footer {
+    width: 161px;
+    height: 176px;
+   
+}
+
+.follow-us {
+  width: 62vw;
+  margin-left: 0px;
+  
+}
+.logo-footer img {
+  width: 153px;
+  height: 147px;
+  padding: 20px;
+}
+.follow-us h3 {
+  font-size: 3.5vh;
+  font-weight: 700;
+}
+.quick-links{
+  margin-left: 0px;
+ }
+}
+@media screen and (max-width: 530px){
+  .footer-logo {
+    margin-top: 124px;
+    padding-left: 2vw;
+    align-items: center;
+  }
+  .logo-footer img{
+    height: 100%;
+    width: 100%;
+
+  }
+  .logo-footer {
+    width: 135px;
+    height: 137px;
+}
+   
+  .social-icons { 
+    height: 1rem;
+    width: 1rem;
+    /* margin: 0 50px 0 20px; */
+  }
+  .social-icons a {
+    color: black;
+    font-size: 3vh; 
+  }
+ .quick-links{
+  margin-left: 0px;
+ }
+ .follow-us{
+  margin-left: 0px;
+ } 
+}
+
+/** For mobile devices **/
+/* @media (max-width: 767px) {
+  .custom-shape-divider-top-1725455521 svg {
+      width: calc(189% + 1.3px);
+      height: 129px;
+  }
+} */
+@media screen and (max-width: 420px) {
+  /* Footer.css */
+  .footer-container {
+    position: relative; 
+    display: flex; 
+    padding: 20px;
+    background-color: #c8a200;  
+    padding: 1rem;
+    color: white;
+  }
+  .follow-us {
+    display: flex;
+    width: fit-content;
+    flex-direction: row; 
+    color: black;
+  }
+  .quick-links{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+  }
+  .quick-links a {
+    font-size: 1rem;
+}
+.footer-links {
+  margin-top: 10px;
+  font-size: 2vh;
+  font-weight: 600;
+}
+  .quick-links h3 {
+    font-size: 4vh;
+    font-weight: 600;
+  }
+  .follow-us h3 {
+    font-size: 2.5vh;
+    font-weight: 700;
+    /* margin-top: 11px;
+    margin-right: 51px; */
+  }
+
+  .quick-links ul {
+    list-style: none;
+    padding: 2vh;
+  }
+
+  .quick-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .links-follow {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 2vw;
+  }
+  .footer-logo {
+    margin-top: 124px;
+    padding-left: 2vw;
+    align-items: center;
+  }
+  .logo-footer img{
+    height: 100%;
+    width: 100%;
+
+  }
+  .logo-footer {
+    width: 100px;
+    height: 100px;
+  }
+   
+  .social-icons { 
+    height: 1rem;
+    width: 1rem;
+    margin: 0 50px 0 20px;
+  }
+  .social-icons a {
+    color: black;
+    font-size: 2.5vh; 
+  }
+ .quick-links{
+  margin-left: 0px;
+ }
+ .follow-us{
+  margin-left: 0px;
+ }  
+}

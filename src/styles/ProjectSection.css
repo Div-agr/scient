@@ -1,0 +1,155 @@
+.project-section {
+  background-color: #000000;
+  color: #fff;
+  padding: 80px 60px 20px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section h2 {
+  border-bottom: 3px solid #bebb00;
+  width: auto;
+  display: flex;
+  align-self: center;
+  font-size: 35px;
+  padding-bottom: 0.6%;
+  margin-bottom: 3%;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px; 
+  padding: 20px 0; 
+}
+
+.project-item {
+  position: relative; 
+  background-color: #000000;
+  border: 3px #bebb00 solid;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 225px;
+  min-height: 250px; /* Changed from fixed height to minimum height */
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Flex layout for better vertical alignment */
+  justify-content: space-between; /* Ensure spacing for credits */
+}
+
+.projectname {
+  font-size: 20px;
+  color: ghostwhite;
+  font-family: fantasy;
+  border-color: #bebb00;
+  margin-top: 5px;
+}
+
+.credits {
+  font-size: 18px;
+  color: #bebb00;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+
+.project-item img {
+  width: 100%;
+  height: 70%; /* Adjust to allow space for project name and credits */
+  object-fit: cover;
+  border-bottom: 1px solid #000000; 
+}
+
+.project-item select {
+  background-color: #242222;
+  cursor: pointer;
+  border: none;
+  padding: 7px;
+  display: flex;
+  width: 25vw;
+}
+
+.project-item:hover {
+  transform: scale(1.05); /* Slightly reduce the scaling */
+  transition: 0.3s ease;
+}
+
+.project-item select option {
+  width: 300px;
+  cursor: pointer;
+  background-color: rgb(15, 14, 14);
+}
+
+.project-item select:hover {
+  border: none;
+}
+
+@media only screen and (max-width: 1006px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .project-item select {
+    background-color: #242222;
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    display: flex;
+    width: 34vw;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .project-item select {
+    background-color: #242222;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    display: flex;
+    width: 70vw;
+  }
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000; /* Navbar background color */
+  padding: 20px 40px;
+}
+
+/* Logo styling */
+.logo img {
+  height: 40px; /* Adjust height to fit */
+}
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Individual link styling */
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Text color */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Separator styling */
+.separator {
+  color: #bebb00; /* Yellow color for the separator */
+  font-size: 18px;
+}

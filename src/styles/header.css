@@ -1,0 +1,83 @@
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 20px 40px;
+}
+
+/* Logo styling */
+.logo img {
+  height: 70px; /* Adjust height to fit */
+}
+
+/* Navbar links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Individual link styling */
+.nav-links .nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Separator styling */
+.separator {
+  color: #bebb00; /* Yellow color for the separator */
+  font-size: 18px;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    height: 50px; /* Adjust height for smaller screens */
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links .nav-link {
+    font-size: 14px; /* Reduce font size slightly */
+  }
+
+  .separator {
+    font-size: 16px; /* Adjust separator size */
+  }
+}
+
+/* Mobile screens (470px and below) */
+@media screen and (max-width: 470px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links .nav-link {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .separator {
+    display: none; /* Hide separators on small screens for cleaner look */
+  }
+}

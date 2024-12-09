@@ -1,0 +1,152 @@
+/* Container for welcome and login sections */
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  gap: 20px;
+  margin: 0 auto; /* Center container */
+}
+
+/* Welcome Section */
+.welcome-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.welcome-section h2 {
+  font-size: 2.2rem;
+  color: #c7a400;
+}
+
+/* Login Section */
+.login-section {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c7a400;
+}
+
+.login-section input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 2px solid #565656;
+}
+
+.login-section input::placeholder {
+  color: #565656;
+  font-weight: bold;
+}
+
+.login-section button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7a400;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-section button:hover {
+  background-color: #e0b400;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #c7a400;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-section h2,
+  .login-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile screens (470px and below) */
+@media screen and (max-width: 470px) {
+  .box {
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .welcome-section{
+    margin-top:50px;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-section h2,
+  .login-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .login-section input,
+  .login-section button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .login-section {
+    padding: 20px;
+  }
+}
