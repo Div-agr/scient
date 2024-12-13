@@ -11,23 +11,24 @@ const UserDashboard = () => {
   });
 
   const clubLogos = {
-    "SPIDER": spider,
-    "DELTA": delta,
-    "ECELL": ecell,
-    "MAX": max,
-    "SIGMA": sigma,
-    "180DC": oedc,
-    "DC": dc,
-    "NAKSHATRA": naksh,
-    "PSI": psi,
-    "RMI": rmi,
-    "GRAPHIQUE": graphique,
-    "3D": td,
-    "PROFNITT": prof,
-    "FORCE HYPERLOOP": fh,
-    "DATABYTE": db,
-    "EVER": ever,
-    "Scient": scient
+        SPIDER: spider,
+        DELTA: delta,
+        "E-CELL": ecell,
+        "180-DC":oedc,
+        GRAPHIQUE: graphique,
+        SIGMA: sigma,
+        EVER: ever,
+        OEDC: oedc,
+        "3D-AERODYNAMICS": td,
+        "FORCE-HYPERLOOP": fh,
+        MAXIMUS: max,
+        RMI: rmi,
+        PSI: psi,
+        "DESIGNERS-CONSORTIUM": dc,
+        NAKSHATRA: naksh,
+        "DATA-BYTE": db,
+        PROFNITT: prof,
+        SCIENT: scient,
   };
 
   // Fetch club data on component load

@@ -34,7 +34,7 @@ const Dashboard = () => {
         const response = await fetch("http://localhost:5000/api/clubs/clubdata", {
           method: "GET",
           headers: {
-            "Authorization": `Bearer ${localStorage.getItem('token')}`, // Add token in the header
+            "Authorization": `Bearer ${localStorage.getItem('authToken')}`, // Add token in the header
           },
         });
         const data = await response.json();

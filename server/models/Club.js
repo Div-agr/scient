@@ -11,7 +11,7 @@ const clubSchema = new mongoose.Schema({
 });
 
 clubSchema.methods.resetCredits = function() {
-  this.credits = this.name === 'Scient' ? Infinity : 7;
+  this.credits = this.name === 'Scient' ? 100 : 7;
   return this.save();
 };
 
